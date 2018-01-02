@@ -1,0 +1,34 @@
+feature-githubSearch
+====================
+
+This feature is mainly used as an enviroment check just to make sure the overall cucumber / webdriver / selenium / browser setup is functioning.
+
+.. literalinclude:: ../../src/features/githubSearch.feature
+  :language: cucumber
+  :linenos:
+
+The above test is run using the following command::
+
+  catmini:drpfeature msops$ yarn run wdio --spec ./src/features/githubSearch.feature 
+  yarn run v1.3.2
+  $ /Users/msops/Code/drpfeature/node_modules/.bin/wdio --spec ./src/features/githubSearch.feature
+  ------------------------------------------------------------------
+  [chrome #0-0] Session ID: 02f516ab-8e38-4449-9847-1f1501989541
+  [chrome #0-0] Spec: /Users/msops/Code/drpfeature/src/features/githubSearch.feature
+  [chrome #0-0] Running: chrome
+  [chrome #0-0]
+  [chrome #0-0] Github test
+  [chrome #0-0]
+  [chrome #0-0]     open URL
+  [chrome #0-0]       ✓ I open the url "https://github.com/ctrees/drpfeature"
+  [chrome #0-0]       ✓ I expect that the url is "https://github.com/ctrees/drpfeature"
+  [chrome #0-0]       ✓ I expect that the title is "GitHub - ctrees/drpfeature: Digital Rebar Provision UX Feature Testing Automation"
+  [chrome #0-0]
+  [chrome #0-0]
+  [chrome #0-0] 3 passing (3s)
+  [chrome #0-0]
+  
+  ✨  Done in 7.20s.
+  catmini:drpfeature msops$
+
+Currently this test only checks https://github.com/ctrees/drpfeature html title.  GitHub search and 'fake login' Scenarios are commented out.
