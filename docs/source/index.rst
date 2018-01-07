@@ -1,6 +1,10 @@
 Document: drpfeature 
 ====================
 
+github: https://github.com/ctrees/drpfeature/
+
+readthedocs: http://drpfeature.readthedocs.io/en/latest/index.html
+
 Some really good text that I forgot to type-in here.
 
 Methods
@@ -28,6 +32,7 @@ Guides
    pageobjects
    bugsWorkInProgress
    help
+   help-test-tutorial-login
 
 Indices and tables
 ==================

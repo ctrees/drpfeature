@@ -3,6 +3,8 @@ Digital Rebar Provision UX Feature Testing Automation
 
 ***
 
+ReadTheDocs for [drpfeature](http://drpfeature.readthedocs.io/en/latest/index.html)
+
 drpfeature project to run WebdriverIO tests with [Cucumber](https://cucumber.io/) and follow [TTD](https://en.wikipedia.org/wiki/Test-driven_development) and [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development) to create a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) for [DRP](http://provision.readthedocs.io/en/latest/)
 
 ## Requirements
@@ -25,6 +27,12 @@ $ yarn install
 
 ```sh
 $ yarn run test
+```
+
+5. Build the documents
+
+```sh
+$ yarn run docs
 ```
 
 # How to write a test
@@ -55,22 +63,6 @@ Scenario: Another test
 This test opens the browser and navigates them to google.com to check if the title contains the search
 query after doing a search. As you can see, it is pretty simple and understandable for everyone.
 
-# How to run the test
-
-Start the target server:
-
-```sh
-$ yarn run drpendpoint
-```
-
-To run your tests just call the [WDIO runner](http://webdriver.io/guide/testrunner/gettingstarted.html):
-
-```sh
-$ yarn run wdio
-```
-
-_please note_ The WDIO runner uses the configuration file `wdio.conf.js` by default.
-
 # Configurations
 
 To configure your tests, checkout the [`wdio.conf.js`](https://github.com/webdriverio/cucumber-boilerplate/blob/master/wdio.conf.js) file in your test directory. It comes with a bunch of documented options you can choose from.
@@ -88,13 +80,20 @@ wdio.<ENVIRONMENT>.conf.js
 
 Now you can create a specific config for your pre-deploy tests:
 
-__wdio.STAGING.conf.js__
+__wdio.PageObjectTest.conf.js__
 ```js
-var config = require('./wdio.conf.js').config;
+const wdioConfig = require('./wdio.conf.js');
 
-config.baseUrl = 'http://staging.example.com'
+wdioConfig.config.capabilities = [{
+    browserName: 'chrome',
+}];
+wdioConfig.config.logLevel = 'silent',
+wdioConfig.config.baseUrl = 'https://rackn.github.io/provision-ux',
+wdioConfig.config.specs = [ __dirname + '/src/pospecs/*.spec.js' ],
+wdioConfig.config.services = ['selenium-standalone', 'visual-regression'];
+wdioConfig.config.framework = 'mocha';
 
-exports.config = config;
+exports.config = wdioConfig.config;
 ```
 
 Your environment-specific config file will get merged into the default config file and overwrites the values you set.

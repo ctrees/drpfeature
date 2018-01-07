@@ -3,6 +3,8 @@ Help
 
 Ping ctrees_at_mailserviceslc_dot_com
 
+Read and view me explaining this repo in help-test-tutorial-login_ where I explain the repo structure and walk through the proposed testing workflow.
+
 ==================
 drpfeature Install
 ==================
@@ -68,6 +70,7 @@ References
  + drp_ is a work fork of drp-forksource_
  + yarn_ is a new npm (node package manager)
  + cucumber-boilerplate_ is a work fork of cucumber-boilerplate-forksource_
+ + help-test-tutorial-login_ is a testing workflow walk through of a basic login test
 
 .. _drpfeature: https://github.com/ctrees/drpfeature
 .. _drpfeature-docs: http://drpfeature.readthedocs.io/en/latest/
@@ -79,3 +82,4 @@ References
 .. _yarn: https://yarnpkg.com/en/docs/cli
 .. _cucumber-boilerplate: https://github.com/ctrees/cucumber-boilerplate
 .. _cucumber-boilerplate-forksource: https://github.com/webdriverio/cucumber-boilerplate
+.. _help-test-tutorial-login: http://drpfeature.readthedocs.io/en/latest/help-test-tutorial-login.html
