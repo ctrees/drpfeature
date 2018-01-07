@@ -1,0 +1,130 @@
+ #. webdriverio http://webdriver.io/guide.html
+
+    #. https://github.com/webdriverio/webdriverio/blob/master/docs/guide/getstarted/boilerplate.md 
+    #. https://github.com/webdriverio/cucumber-boilerplate/blob/master/src/features/login.feature.pending
+    #. cucumber-boilerplate had login feature but it's a stub
+    #. https://github.com/webdriverio/cucumber-boilerplate/blob/master/src/features/login.feature.pending
+    #. Example of adding feature to cucumber with wdio
+
+       #. https://github.com/webdriverio/cucumber-boilerplate/pull/145/commits/8ca36401ace0f725665dd68bae184526f76e68eb
+
+    #. Debug with cucumberjs (chimp) https://youtu.be/LAv4H8RTDLA?t=2165
+
+       #. https://chimp.readme.io/docs/cucumberjs
+
+    #. User Login wdio 
+    
+       #. Video https://www.youtube.com/watch?v=4_ZIaWhQ6Uk 
+       #. Fail then Success Test
+
+          #. Fail https://youtu.be/4_ZIaWhQ6Uk?t=2047
+          #. Finds Bug https://youtu.be/4_ZIaWhQ6Uk?t=2469
+          #. Fixes Bug https://youtu.be/4_ZIaWhQ6Uk?t=2490
+          #. Success Run https://youtu.be/4_ZIaWhQ6Uk?t=2534
+
+       #. CSS Selects https://youtu.be/4_ZIaWhQ6Uk?t=2500
+
+          #. https://css-tricks.com/almanac/selectors/
+          #. Start selector testing https://youtu.be/4_ZIaWhQ6Uk?t=2700
+
+       #. Testyourlogin https://youtu.be/4_ZIaWhQ6Uk?t=3283
+
+ #. React Stuff
+
+    #. Testing REACT https://www.youtube.com/watch?v=DuGMvfe0bvc
+    #. Jest (React snapshot) https://facebook.github.io/Jest
+    #. More Jest https://egghead.io/lessons/react-jest-snapshot-testing-with-react-storybook
+    #. Mention of Jest https://youtu.be/DuGMvfe0bvc?t=123
+    #. react-boilerplate Example
+
+       #. Add "npm -i --save-dev webdriverio" https://youtu.be/DuGMvfe0bvc?t=263
+       #. Add wdio to scripts in package.json https://youtu.be/DuGMvfe0bvc?t=276
+       #. Setup wdio "npm run wdio" https://youtu.be/DuGMvfe0bvc?t=293
+       #. Make test "mkdir test"
+       #. Edit test/test.js
+       #. Deal with reactjs selectors by pausing script to grab handle https://youtu.be/DuGMvfe0bvc?t=479
+       #. use browser.keys() function to select a value in dropdown https://youtu.be/DuGMvfe0bvc?t=582
+       #. Finds unicode chars https://youtu.be/DuGMvfe0bvc?t=690
+
+
+
+ #. Need a login feature... I forgot that the test uses a new browser session.
+
+    #. Created test@horseoff.com signed up at https://rackn.github.io/provision-ux
+    #. Create test github issue: https://github.com/digitalrebar/provision/issues/620
+    #. Create login test at: http://testyourlog.in/ https://youtu.be/dl-YnA_njXo
+    #. React https://react.rocks
+    #. Test he used https://skempin.github.io/reactjs-tmdb-app/
+
+       #. http://blog.kevinlamping.com/testing-your-login-an-in-depth-webdriverio-tutorial/
+       #. http://blog.kevinlamping.com/selecting-elements-in-webdriverio/
+
+
+ #. Debugging the login.spec.js file.
+     This is a dump of where I was debugging login.spec.js and I decided to clean up and publish FIRST.  I'll come back to this and document it as I go::
+
+            var expect = require('chai').expect;
+            var LoginPage = require('../pageobjects/login.page');
+            var NavbarPageObject = require('../pageobjects/navbar.page');
+
+            //- TODO: BEGIN-NOTE
+            //- Should come from some private/map/dsl thing but for now
+            const validEmail = 'test@horseoff.com';
+            const validPass = 'GoodUser1';
+            const loginText = 'RackN Portal Login'
+            const logoutText = 'Logout & Support';
+            const noUserHTML = "<p id=\"loginErrorMessage\" class=\"errorMessage-customizable\">User does not exist. </p>";
+            //- END-NOTE
+
+            describe('drp-ux auth form', function () {
+            
+            it('should deny access with wrong creds', function () {
+            //        browser.debug();
+            //        this.skip();
+                  LoginPage.open();
+                  LoginPage.username.waitForExist(3000);
+                  LoginPage.username.waitForVisible(3000);
+                  browser.keys('Tab');
+                  browser.keys('gobblygook@horseoff.com');
+                  browser.keys('Tab');
+                  browser.keys('BadPass');
+            //        browser.debug();
+                  browser.keys('Tab');
+                  browser.keys('Tab');
+                  browser.keys('Enter');
+            /*        browser.waitUntil(function() {
+                        return LoginPage.getFlashHTML == noUserHTML
+                  }, 5000, 'expected No User Message waited 5s');
+                  expect(LoginPage.getFlashHTML).to.contain(noUserHTML);
+            */
+            //        console.log("DEBUG is: " + process.env.DEBUG );
+            //        if (process.env.DEBUG) { console.log( "Debug in login.spec.js"); browser.debug(); } else { console.log( "Skipping debug in login.spec.js"); }
+
+                  LoginPage.visCheck('visCheck: wrong creds fail')
+            });
+            
+            it('should allow access with correct creds', function () {
+                  LoginPage.open();
+                  browser.keys('Tab');
+                  LoginPage.username.waitForExist(3000);
+                  LoginPage.username.waitForVisible(3000);
+                  LoginPage.username.waitForEnabled(3000);
+                  browser.keys(validEmail);
+                  LoginPage.password.waitForExist(3000);
+                  LoginPage.password.waitForVisible(3000);
+                  LoginPage.password.waitForEnabled(3000);
+                  browser.keys('Tab');
+                  browser.keys(validPass);
+                  browser.keys('Tab');
+                  browser.keys('Tab');
+                  browser.keys('Enter');
+            /*        browser.waitUntil(function() {
+                        return NavbarPageObject.getCurrentUser == validEmail
+                  }, 5000, 'expected text to be currentUser waited 5s');
+                  expect(NavbarPageObject.getCurrentUser).to.equal(validEmail);
+            */
+                  NavbarPageObject.visCheck('visCheck: Valid login Check Fail')
+            });
+            });
+
+ #. Going back to Cleanup now.

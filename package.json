@@ -4,9 +4,13 @@
   "description": "Boilerplate project to run drp UX feature tests with Cucumber",
   "homepage": "https://github.com/ctrees/drpfeature",
   "scripts": {
-    "clean": "read -p \"Are you sure you want to clean the project? [y/n] \" REPLY; if [[ $REPLY =~ ^[Yy]$ ]]; then rm -R .git .github demo-app test .codeclimate.yml .travis.yml jest.json wdio.BUILD.conf.js src/features/**; fi",
-    "test": "yarn run test:features",
-    "test:features": "wdio wdio.BUILD.conf.js; wdio_ret=$?; forever stopall; exit $wdio_ret",
+    "clear": "rm -R screenshots errorShots",
+    "docs": "cd docs && make html && cd ..",
+    "test": "yarn run test:fcheck; yarn run test:po",
+    "test:po": "DEBUG=false yarn run wdio wdio.PageObjectTest.conf.js",
+    "debug:po": "DEBUG=true yarn run wdio wdio.PageObjectTest.conf.js",
+    "test:fcheck": "yarn run wdio --spec ./src/features/githubSearch.feature",
+    "test:features": "wdio wdio.conf.js; wdio_ret=$?; forever stopall; exit $wdio_ret",
     "test:unit": "jest --config=jest.json",
     "test:validate": "eslint 'src/**/*.js' 'test/**/*.js!(setup.js)'"
   },
@@ -20,9 +24,9 @@
   "keywords": [
     "drp",
     "drpfeature",
+    "drpuxtest",
     "webdriverio",
     "cucumber",
-    "test",
     "selenium"
   ],
   "author": "Chris Trees <ctrees@mailserviceslc.com>",
@@ -34,10 +38,15 @@
     "babel-preset-es2015": "~6.24.0",
     "babel-register": "~6.26.0",
     "chai": "~4.1.2",
-    "wdio-cucumber-framework": "~1.0.2",
+    "chai-webdriver": "^1.2.0",
+    "chai-webdriverio": "^0.4.3",
+    "selenium-webdriver": "^3.6.0",
+    "wdio-cucumber-framework": "^1.0.3",
+    "wdio-mocha-framework": "^0.5.12",
     "wdio-phantomjs-service": "~0.2.2",
     "wdio-selenium-standalone-service": "~0.0.9",
-    "wdio-spec-reporter": "~0.1.2",
+    "wdio-spec-reporter": "^0.1.3",
+    "wdio-visual-regression-service": "^0.8.0",
     "webdriverio": "4.9.8"
   },
   "devDependencies": {

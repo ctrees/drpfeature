@@ -1,3 +1,21 @@
+//-cat drplogintest/wdio.conf.js
+const path = require('path');
+const VisualRegressionCompare = require('wdio-visual-regression-service/compare');
+function getScreenshotName(basePath) {
+    return function(context) {
+      var type = context.type;
+      var testName = context.test.title;
+      var browserVersion = parseInt(context.browser.version, 10);
+      var browserName = context.browser.name;
+      var browserViewport = context.meta.viewport;
+      var browserWidth = browserViewport.width;
+      var browserHeight = browserViewport.height;
+  
+      return path.join(basePath, `${testName}_${type}_${browserName}_v${browserVersion}_${browserWidth}x${browserHeight}.png`);
+    };
+}
+var mochaTimeout = process.env.DEBUG ? 99999999 : 60000;
+
 exports.config = {
     //
     // ==================
@@ -71,10 +89,10 @@ exports.config = {
     //
     // Set a base URL in order to shorten url command calls. If your url
     // parameter starts with "/", then the base url gets prepended.
-    baseUrl: 'http://localhost:8080',
+    baseUrl: 'https://rackn.github.io/provision-ux',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 150000,
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
@@ -105,7 +123,19 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They
     // enhance your test setup with almost no effort. Unlike plugins, they don't
     // add new commands. Instead, they hook themselves up into the test process.
-    services: ['selenium-standalone'],
+    services: ['selenium-standalone', 'visual-regression'],
+    visualRegression: {
+        compare: new VisualRegressionCompare.LocalCompare({
+          referenceName: getScreenshotName(path.join(process.cwd(), 'screenshots/reference')),
+          screenshotName: getScreenshotName(path.join(process.cwd(), 'screenshots/screen')),
+          diffName: getScreenshotName(path.join(process.cwd(), 'screenshots/diff')),
+          misMatchTolerance: 0.01,
+        }),
+        viewportChangePause: 400,
+//        viewports: [{ width: 320, height: 480 }, { width: 480, height: 320 }, { width: 1024, height: 768 }],
+        viewports: [{ width: 1024, height: 768 }],
+        orientations: ['landscape', 'portrait'],
+      },
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -119,6 +149,13 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/testrunner/reporters.html
     reporters: ['spec'],
+    //
+    // Options to be passed to Mocha.
+    // See the full list at http://mochajs.org/
+    mochaOpts: {
+        ui: 'bdd',
+        timeout: mochaTimeout
+    },
     //
     // If you are using Cucumber you need to specify the location of your step
     // definitions.
@@ -189,7 +226,9 @@ exports.config = {
          * Setup the Chai assertion framework
          */
         const chai = require('chai');
-
+        const chaiWebdriver = require('chai-webdriverio').default;
+        chai.use(chaiWebdriver(browser));  
+  
         global.expect = chai.expect;
         global.assert = chai.assert;
         global.should = chai.should();

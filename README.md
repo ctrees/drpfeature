@@ -3,7 +3,7 @@ Digital Rebar Provision UX Feature Testing Automation
 
 ***
 
-drpfeature project to run WebdriverIO tests with [Cucumber](https://cucumber.io/) and follow [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development) to create a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) for [DRP](http://provision.readthedocs.io/en/latest/)
+drpfeature project to run WebdriverIO tests with [Cucumber](https://cucumber.io/) and follow [TTD](https://en.wikipedia.org/wiki/Test-driven_development) and [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development) to create a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) for [DRP](http://provision.readthedocs.io/en/latest/)
 
 ## Requirements
 
@@ -13,8 +13,6 @@ Although this project works fine with NPM we recommend to use Yarn (>= 1.0.0) in
 
 ## Quick start
 
-Choose one of the following options:
-
 1. Clone the git repo — `git clone https://github.com/ctrees/drpfeature.git`
 
 2. Install the dependencies 
@@ -23,15 +21,7 @@ Choose one of the following options:
 $ yarn install
 ```
 
-3. Start target 
-
-```sh
-$ yarn run local-webserver
-```
-
 4. Run the tests
-
-To run your tests just call the [WDIO runner](http://webdriver.io/guide/testrunner/gettingstarted.html):
 
 ```sh
 $ yarn run test
@@ -45,18 +35,17 @@ that means that you write down what's supposed to happen in a real language. All
 directory. They should demonstrate, how tests could look like. Just create a new file and write your first
 test.
 
-__myFirstTest.feature__
+__githubSeach.feature__
 ```gherkin
-Feature:
-    In order to keep my product stable
-    As a developer or product manager
-    I want to make sure that everything works as expected
+Feature: Github test
+    As a Developer in Test
+    I want to search drpfeature repository
+    So that I can use it in my future tests
 
-Scenario: Check title of website after search
-    Given I open the url "http://google.com"
-    When I set "WebdriverIO" to the inputfield "#gbqfq"
-    And I press "Enter"
-    Then I expect that the title is "WebdriverIO - Google Search"
+Scenario: open URL
+    Given I open the url "https://github.com/ctrees/drpfeature"
+    Then  I expect that the url is "https://github.com/ctrees/drpfeature"
+    And   I expect that the title is "GitHub - ctrees/drpfeature: Digital Rebar Provision UX Feature Testing Automation"
 
 Scenario: Another test
     Given ...
@@ -112,14 +101,14 @@ Your environment-specific config file will get merged into the default config fi
 To run a test in a specific environment just add the desired configuration file as the first parameter:
 
 ```sh
-$ yarn run wdio wdio.STAGING.conf.js
+$ yarn run wdio wdio.PageObjectTest.conf.js
 ```
 
 # Running single feature
 Sometimes its useful to only execute a single feature file, to do so use the following command:
 
 ```sh
-$ yarn run wdio -- --spec ./test/features/select.feature
+$ yarn run wdio -- --spec ./test/features/githubSearch.feature
 ```
 
 

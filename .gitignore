@@ -1,5 +1,7 @@
 # Chris Trees merging gitinores
 
+.DS_Store
+
 ################################
 # cucumber-boilerplate gitignore 
 
@@ -13,6 +15,7 @@ node_modules
 
 errorShots
 coverage
+screenshots
 
 # cucumber-boilerplate gitignore 
 ################################
@@ -39,7 +42,7 @@ server.key
 server.crt
 cmds/incrementer/content.go
 # Pip stuff for docs
-src
+# src
 test-data/etc/dr-provision/._Description.meta
 test-data/etc/dr-provision/._Name.meta
 test-data/etc/dr-provision/._Version.meta

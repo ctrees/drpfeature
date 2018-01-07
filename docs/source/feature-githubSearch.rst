@@ -4,7 +4,7 @@ feature-githubSearch
 This feature is mainly used as an enviroment check just to make sure the overall cucumber / webdriver / selenium / browser setup is functioning.
 
 .. literalinclude:: ../../src/features/githubSearch.feature
-  :language: cucumber
+  :language: gherkin
   :linenos:
 
 The above test is run using the following command::

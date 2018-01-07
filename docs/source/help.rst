@@ -3,18 +3,20 @@ Help
 
 Ping ctrees_at_mailserviceslc_dot_com
 
-==========
-References
-==========
+==================
+drpfeature Install
+==================
 
- + github drpfeature_
- + ReadTheDocs drpfeature-docs_
- + Docs created via Sphinx_
- + rst-cheatsheet_ 
- + pip-install_
- + drpfeature_ is based on cucumber-boilerplate_ feature test for drp_ UX portal
- + drp_ is a work fork of drp-forksource_
- + cucumber-boilerplate_ is a work fork of cucumber-boilerplate-forksource_
+Quick Start::
+
+ $ node --version
+ v8.9.3
+ $ cd ~/Code
+ $ git clone https://github.com/ctrees/drpfeature.git
+ $ cd drpfeature
+ $ yarn install
+ $ yarn run test
+ $ yarn run docs
 
 =================
 Build ReadTheDocs
@@ -53,21 +55,19 @@ To install Sphinx via pip ( pip-install_ ) to make documentation::
  pip 9.0.1 from /Library/Python/2.7/site-packages (python 2.7)
  $ sudo pip install --ignore-installed Sphinx
 
-==========================
-cucumber webdriver Install
-==========================
+==========
+References
+==========
 
-Quick Start::
-
- $ node --version
- v8.9.3
- $ cd ~/Code
- $ git clone https://github.com/ctrees/drpfeature.git
- $ cd drpfeature
- $ yarn install
- $ yarn run local-webserver
- $ yarn run test
-
+ + github drpfeature_
+ + ReadTheDocs drpfeature-docs_
+ + Docs created via Sphinx_
+ + rst-cheatsheet_ 
+ + pip-install_
+ + drpfeature_ is based on cucumber-boilerplate_ feature test for drp_ UX portal
+ + drp_ is a work fork of drp-forksource_
+ + yarn_ is a new npm (node package manager)
+ + cucumber-boilerplate_ is a work fork of cucumber-boilerplate-forksource_
 
 .. _drpfeature: https://github.com/ctrees/drpfeature
 .. _drpfeature-docs: http://drpfeature.readthedocs.io/en/latest/
@@ -76,5 +76,6 @@ Quick Start::
 .. _pip-install: https://pip.pypa.io/en/stable/installing/
 .. _drp: https://github.com/ctrees/provision
 .. _drp-forksource: https://github.com/digitalrebar/provision
+.. _yarn: https://yarnpkg.com/en/docs/cli
 .. _cucumber-boilerplate: https://github.com/ctrees/cucumber-boilerplate
 .. _cucumber-boilerplate-forksource: https://github.com/webdriverio/cucumber-boilerplate
