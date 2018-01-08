@@ -145,32 +145,34 @@ OK... now let's **add value** as I like to say, or just Bchn... but it's improvi
 
 #. Inspecting the test.
     #. Specfically I started with this git commit of login.spec.js_ and login.page.js_ (links are to commit pre-changes we make later).
-    #. tbd
-    #. tbd
+    #. See Part 3
 #. Notice that test is not really checking anything other than a **Screen Compare**
-    #. tbd
-    #. tbd
+    #. See Part 6
+    #. See Part 7
 #. Well... HECK... I can **HACK** something better than this ;-)
-    #. tbd
-    #. tbd
+    #. See Part 7
+    #. See Part 8
 #. What next... HACK see below.
 
 HACK
 ----
 
-The fun part till you get frustrated with humans and there pretty little tools too.
+The fun part till you get frustrated with humans and pretty little tools too.
+
+See Part 8.
 
 BDFL
 ----
 
 Becoming the Benevolent Dictator For Life seems fun, but takes lots of human and artificial minions _BUT_ it makes life easier when well trained.
 
+See Part 9
 
 login tutorial Video
 ====================
 
-Part 1
-------
+Part 1 - TLTR
+-------------
 
 #. Show http://drpfeature.readthedocs.io/en/latest/index.html
 #. Explain Read the Docs Index 
@@ -188,8 +190,8 @@ Part 1
     <iframe width="854" height="480" src="https://www.youtube.com/embed/yBVuIWMREWQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 2
-------
+Part 2 - WTF - Docs and Workflow
+--------------------------------
 
 #. Show new http://drpfeature.readthedocs.io/en/latest/help-test-tutorial-login.html
 #. Show local docs file:///Users/msops/Demo/drpfeature/docs/build/html/pageobject-login.html with screenshots
@@ -207,8 +209,8 @@ Part 2
     <iframe width="854" height="480" src="https://www.youtube.com/embed/kdxyK7bDMZA?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 3
-------
+Part 3 - WTF / FLAMEON - Workflow and Debug
+-------------------------------------------
 
 #. Talk about CI regression
 #. Talk about Learning/Docs/Transfer Automation Tutorial ?
@@ -226,8 +228,8 @@ Part 3
     <iframe width="854" height="480" src="https://www.youtube.com/embed/lNTYViS4RV8?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 4
-------
+Part 4 - WTF - Overview of project stuff
+----------------------------------------
 
 #. Go back to http://drpfeature.readthedocs.io/en/latest/pageobject-login.html
 #. Go pull up login.page.js
@@ -246,8 +248,8 @@ Part 4
     <iframe width="854" height="480" src="https://www.youtube.com/embed/uIBSTxSbWjw?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 5
-------
+Part 5 - WTF - Files and Patterns
+---------------------------------
 
 #. Explain src directory... the source testing files
 #. feature, steps and support are for cucumber
@@ -265,8 +267,8 @@ Part 5
     <iframe width="854" height="480" src="https://www.youtube.com/embed/oEU0rwS1Wt0?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 6
-------
+Part 6 - WTF / FLAMEON - source files, steps, testing tools
+-----------------------------------------------------------
 
 #. Explain pospecs/login.spec.js
 #. explain chai asserts (which are missing right now)
@@ -284,8 +286,8 @@ Part 6
     <iframe width="854" height="480" src="https://www.youtube.com/embed/3jc77GaVK-E?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 7
-------
+Part 7 - FLAMEON / HACK - Discover DOM, Reactjs
+-----------------------------------------------
 
 #. run "yarn run test:po"
 #. attempt to explain while it's running... hit "browser.debug();"
@@ -303,8 +305,8 @@ Part 7
     <iframe width="854" height="480" src="https://www.youtube.com/embed/7iJXEneCyK4?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 8
-------
+Part 8 - HACK - Break, Debug, FIX and improve
+---------------------------------------------
 
 #. take browser.debug(); out so it does not stop
 #. run test "yarn test:po" woops I messed up (didn't save)
@@ -322,8 +324,8 @@ Part 8
     <iframe width="854" height="480" src="https://www.youtube.com/embed/iydkuN1gWVU?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 9
-------
+Part 9 - HACK / BDFL - cleanup, make run, document for fame
+-----------------------------------------------------------
 
 #. Part 9 ends this... even if I want to go on...
 #. fix what we broke...
