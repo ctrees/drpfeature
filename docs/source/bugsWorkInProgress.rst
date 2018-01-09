@@ -1,5 +1,5 @@
-Bug Issue Testing for DRP
-=========================
+Bug/Test Issues for DRP-UX
+==========================
 
 Issues
 
@@ -8,9 +8,6 @@ Issues
  
 
 Below are the Bug tests.
-
-Bug Issues
-^^^^^^^^^^
 
 .. toctree::
    :maxdepth: 3

@@ -1,3 +1,4 @@
+@Pending
 Feature: Test the existens and content of cookies
     As a developer
     I want to be able to test the existence and/or the content of cookies

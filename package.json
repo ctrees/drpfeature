@@ -6,7 +6,7 @@
   "scripts": {
     "clear": "rm -R screenshots errorShots",
     "docs": "cd docs && make html && cd ..",
-    "test": "yarn run test:fcheck; yarn run test:po",
+    "test": "yarn run test:features; yarn run test:po",
     "test:po": "DEBUG=false yarn run wdio wdio.PageObjectTest.conf.js",
     "debug:po": "DEBUG=true yarn run wdio wdio.PageObjectTest.conf.js",
     "test:fcheck": "yarn run wdio --spec ./src/features/githubSearch.feature",

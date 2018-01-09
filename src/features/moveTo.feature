@@ -1,3 +1,4 @@
+@Pending
 Feature: Test moveTo elements
     As a developer
     I want to be able to test if I can move to a element

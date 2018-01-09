@@ -169,10 +169,9 @@ Becoming the Benevolent Dictator For Life seems fun, but takes lots of human and
 See Part 9
 
 login tutorial Video
-====================
+--------------------
 
-Part 1 - TLTR
--------------
++ Part 1 - TLTR
 
 #. Show http://drpfeature.readthedocs.io/en/latest/index.html
 #. Explain Read the Docs Index 
@@ -190,8 +189,7 @@ Part 1 - TLTR
     <iframe width="854" height="480" src="https://www.youtube.com/embed/yBVuIWMREWQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 2 - WTF - Docs and Workflow
---------------------------------
++ Part 2 - WTF - Docs and Workflow
 
 #. Show new http://drpfeature.readthedocs.io/en/latest/help-test-tutorial-login.html
 #. Show local docs file:///Users/msops/Demo/drpfeature/docs/build/html/pageobject-login.html with screenshots
@@ -209,8 +207,7 @@ Part 2 - WTF - Docs and Workflow
     <iframe width="854" height="480" src="https://www.youtube.com/embed/kdxyK7bDMZA?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 3 - WTF / FLAMEON - Workflow and Debug
--------------------------------------------
++ Part 3 - WTF / FLAMEON - Workflow and Debug
 
 #. Talk about CI regression
 #. Talk about Learning/Docs/Transfer Automation Tutorial ?
@@ -228,8 +225,7 @@ Part 3 - WTF / FLAMEON - Workflow and Debug
     <iframe width="854" height="480" src="https://www.youtube.com/embed/lNTYViS4RV8?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 4 - WTF - Overview of project stuff
-----------------------------------------
++ Part 4 - WTF - Overview of project stuff
 
 #. Go back to http://drpfeature.readthedocs.io/en/latest/pageobject-login.html
 #. Go pull up login.page.js
@@ -241,15 +237,13 @@ Part 4 - WTF - Overview of project stuff
 #. Explain package.json
 #. Explain .gitignore, .eslintrc.yaml, .editorconfig, .babelrc
 
-
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 5.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
     <iframe width="854" height="480" src="https://www.youtube.com/embed/uIBSTxSbWjw?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 5 - WTF - Files and Patterns
----------------------------------
++ Part 5 - WTF - Files and Patterns
 
 #. Explain src directory... the source testing files
 #. feature, steps and support are for cucumber
@@ -267,8 +261,7 @@ Part 5 - WTF - Files and Patterns
     <iframe width="854" height="480" src="https://www.youtube.com/embed/oEU0rwS1Wt0?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 6 - WTF / FLAMEON - source files, steps, testing tools
------------------------------------------------------------
++ Part 6 - WTF / FLAMEON - source files, steps, testing tools
 
 #. Explain pospecs/login.spec.js
 #. explain chai asserts (which are missing right now)
@@ -286,8 +279,7 @@ Part 6 - WTF / FLAMEON - source files, steps, testing tools
     <iframe width="854" height="480" src="https://www.youtube.com/embed/3jc77GaVK-E?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 7 - FLAMEON / HACK - Discover DOM, Reactjs
------------------------------------------------
++ Part 7 - FLAMEON / HACK - Discover DOM, Reactjs
 
 #. run "yarn run test:po"
 #. attempt to explain while it's running... hit "browser.debug();"
@@ -305,8 +297,7 @@ Part 7 - FLAMEON / HACK - Discover DOM, Reactjs
     <iframe width="854" height="480" src="https://www.youtube.com/embed/7iJXEneCyK4?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 8 - HACK - Break, Debug, FIX and improve
----------------------------------------------
++ Part 8 - HACK - Break, Debug, FIX and improve
 
 #. take browser.debug(); out so it does not stop
 #. run test "yarn test:po" woops I messed up (didn't save)
@@ -324,8 +315,7 @@ Part 8 - HACK - Break, Debug, FIX and improve
     <iframe width="854" height="480" src="https://www.youtube.com/embed/iydkuN1gWVU?list=PLz24SCapAVurPUfZmRDaJcR6TaHpVXCab" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
 
-Part 9 - HACK / BDFL - cleanup, make run, document for fame
------------------------------------------------------------
++ Part 9 - HACK / BDFL - cleanup, make run, document for fame
 
 #. Part 9 ends this... even if I want to go on...
 #. fix what we broke...
@@ -345,7 +335,8 @@ Part 9 - HACK / BDFL - cleanup, make run, document for fame
 
 References
 
-login.spec.js_ and login.page.js_
+login.spec.js_
+login.page.js_
 
 .. _login.spec.js: https://github.com/ctrees/drpfeature/blob/e9647a41ff09ebe27699a626f5b89fd7fd2c732b/src/pospecs/login.spec.js
 .. _login.page.js: https://github.com/ctrees/drpfeature/blob/e9647a41ff09ebe27699a626f5b89fd7fd2c732b/src/pageobjects/login.page.js

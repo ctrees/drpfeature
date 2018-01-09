@@ -1,3 +1,4 @@
+@Pending
 Feature: Test form submission
     As a developer
     I want to be able to test form submission

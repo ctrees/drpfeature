@@ -1,0 +1,26 @@
+common-<taskname>
+=================
+
+**Intent**
+  This <taskname> is used to access UX elements in the RackN portal <taskname> process and to preform automated UX <taskname> testing.
+
+**Success**
+  Passing and Failing test that can detect successful and failed RackN UX portal user <taskname>.
+
+**Related Information**
+  #. feature help location: docs/source/feature-<taskname>.rst
+  #. feature file location: src/features/<taskname>.features
+  #. pageobject help location: (this file) docs/source/pageobject-<taskname>.rst
+  #. spec test file location: src/spec/<taskname>.spec.js
+  #. pageobject file location: src/pageojects/<taskname>.page.js
+  #. visual result file 1: screenshots/screen/<taskname>-<testname1>_document_Chrome_v63_1024x768.png
+  #. visual result file 2: screenshots/screen/<taskname>-<testname2>_document_Chrome_v63_1024x768.png
+
+**Related Links**
+  #. feature-<taskname>_ Documentation for <taskname> feature
+  #. pageobject-<taskname>_ Documentation for <taskname> pageobject
+  #. help-test-tutorial-<taskname>_ Tutorial on developing, debuging and using <taskname> testing.
+
+.. _feature-<taskname>: http://drpfeature.readthedocs.io/en/latest/feature-<taskname>.html
+.. _pageobject-<taskname>: http://drpfeature.readthedocs.io/en/latest/pageobject-<taskname>.html
+.. _help-test-tutorial-<taskname>: http://drpfeature.readthedocs.io/en/latest/help-test-tutorial-<taskname>.html

@@ -29,11 +29,11 @@ var loginPage = Object.create(page, {
      */
     open: { value: function() {
         page.open.call(this, '#/user/login');
-        this.racknSupportLogoutinButton.waitForExist(3000);
+       /* this.racknSupportLogoutinButton.waitForExist(3000);
         this.racknSupportLogoutinButton.click();
         this.submitButton.waitForExist(3000);
         this.username.waitForExist(3000);
-        this.password.waitForExist(3000);
+        this.password.waitForExist(3000); */
     } },
 
     submit: { value: function() {

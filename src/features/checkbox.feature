@@ -1,3 +1,4 @@
+@Pending
 Feature: Test the selected state of a checkbox
     As a developer
     I want to be able to test the selected state of a checkbox

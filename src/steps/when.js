@@ -17,9 +17,24 @@ import setCookie from '../support/action/setCookie';
 import setInputField from '../support/action/setInputField';
 import setPromptText from '../support/action/setPromptText';
 import submitForm from '../support/action/submitForm';
+//- RackN DSL mappings - BEGIN
+import racknClickElement from '../support/action/racknClickElement';
+import racknUserLogin from '../support/action/racknUserLogin';
+//import loginPage from '../pageobjects/login.page';
+//- RackN DSL mappings - END
 
 
 defineSupportCode(({ When }) => {
+    //- RackN DSL mappings - BEGIN
+    When(
+        /^I (click|doubleclick) the RackN-UX (link|button|element) "([^"]*)?"$/,
+        racknClickElement
+    );
+    When(
+        /^I attempt RackN-Login with username "([^"]*)?" and password "([^"]*)?"$/,
+        racknUserLogin
+    );
+    //- RackN DSL mappings - END
     When(
         /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/,
         clickElement

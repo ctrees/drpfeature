@@ -1,3 +1,4 @@
+@Pending
 Feature: Test how clicks are handled on a certain element
     As a developer
     I want to be able to test how (double) clicks are handled by certain elements

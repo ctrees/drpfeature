@@ -7,24 +7,9 @@ Quick Start - To run just the pageobject tests (po.spec.js) do the following::
 
 The above should run all the *.spec.js in drpfeature/src/pospecs/*.js
 
-
-Issues
-------
-
- #. PageObjects_
-
-PageObject Files
-^^^^^^^^^^^^^^^^
-
 .. toctree::
    :maxdepth: 3
 
    pageobject-login
    pageobject-navbar
    pageobject-page
-
-References
-
-PageObjects_
-
-.. _PageObjects: http://webdriver.io/guide/testrunner/pageobjects.html

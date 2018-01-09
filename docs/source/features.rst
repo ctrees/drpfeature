@@ -1,9 +1,8 @@
-Feature Testing for DRP
-=======================
+Feature Tests for DRP-UX
+========================
 
 Issues
 
- #. Rob thinks Reactjs has an issue with selenium
  #. http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html
  #. https://www.andrewhfarmer.com/getting-started-tutorials/
  #. CucumberJS Features https://www.youtube.com/watch?v=V-G8EnDlHxg
@@ -13,11 +12,9 @@ Issues
 
 Below are the feature tests.
 
-Feature Files
-^^^^^^^^^^^^^
-
 .. toctree::
    :maxdepth: 3
 
+   feature-login
    feature-githubSearch
 

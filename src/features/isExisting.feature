@@ -1,3 +1,4 @@
+@Pending
 Feature: Github test
     As a Developer in Test
     I want to search for webdriverio repository

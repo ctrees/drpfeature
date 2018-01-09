@@ -20,9 +20,17 @@ import isEnabled from '../support/check/isEnabled';
 import isVisible from '../support/check/isVisible';
 import openWebsite from '../support/action/openWebsite';
 import resizeScreenSize from '../support/action/resizeScreenSize';
-
+//- RackN DSL mappings - BEGIN
+import loginPage from '../pageobjects/login.page';
+//- RackN DSL mappings - END
 
 defineSupportCode(({ Given }) => {
+    //- RackN DSL mappings - BEGIN
+    Given(
+        /^I am an anonymous user at the RackN-Portal$/,
+        loginPage.open
+    );
+    //- RackN DSL mappings - END
     Given(
         /^I open the (url|site) "([^"]*)?"$/,
         openWebsite

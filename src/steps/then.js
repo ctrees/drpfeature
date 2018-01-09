@@ -29,9 +29,19 @@ import isVisible from '../support/check/isVisible';
 import waitFor from '../support/action/waitFor';
 import waitForVisible from '../support/action/waitForVisible';
 import checkIfElementExists from '../support/lib/checkIfElementExists';
+//- RackN DSL mappings - BEGIN
+//import racknCheckEqualsText from '../support/check/racknCheckEqualsText';
+//import loginPage from '../pageobjects/login.page';
+//- RackN DSL mappings - END
 
 
 defineSupportCode(({ Then }) => {
+/*    //- RackN DSL mappings - BEGIN
+    Then(
+        /^I expect that RackN-UX (button|element) "([^"]*)?"( not)* matches the text "([^"]*)?"$/,
+        racknCheckEqualsText
+    );
+*/    //- RackN DSL mappings - END
     Then(
         /^I expect that the title is( not)* "([^"]*)?"$/,
         checkTitle

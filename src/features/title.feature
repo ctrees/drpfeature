@@ -1,3 +1,4 @@
+@Pending
 Feature: Test the page title
     As a developer
     I want to be able to test if a page has a certain title

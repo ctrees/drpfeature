@@ -12,7 +12,7 @@ const logoutText = 'Logout & Support';
 
 describe('drp-ux auth form', function () {
     
-    it('should-deny-access-with-wrong-creds', function () {
+    it('bdd-login-unknown-user', function () {
         LoginPage.open();
         LoginPage.username.waitForExist(3000);
         LoginPage.username.waitForVisible(3000);
@@ -27,7 +27,7 @@ describe('drp-ux auth form', function () {
         LoginPage.visCheck('visCheck: wrong creds fail')
     });
     
-    it('should-allow-access-with-correct-creds', function () {
+    it('bdd-login-test-user', function () {
         LoginPage.open();
         browser.keys('Tab');
         LoginPage.username.waitForExist(3000);

@@ -28,6 +28,7 @@ Guides
 .. toctree::
    :maxdepth: 3
 
+   commons
    features
    pageobjects
    bugsWorkInProgress
