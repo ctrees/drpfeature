@@ -1,0 +1,133 @@
+catmini:drpfeature msops$ yarn test
+yarn run v1.3.2
+$ yarn run test:features; yarn run test:po
+$ wdio wdio.conf.js; wdio_ret=$?; forever stopall; exit $wdio_ret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------
+[chrome #0-14] Session ID: dfa9645ba3f043712560582f334365db
+[chrome #0-14] Spec: /Users/msops/Code/drpfeature/src/features/githubSearch.feature
+[chrome #0-14] Running: chrome
+[chrome #0-14]
+[chrome #0-14] drpfeature repo chech at Github
+[chrome #0-14]
+[chrome #0-14]     open-URL
+[chrome #0-14]       ✓ I open the url "https://github.com/ctrees/drpfeature"
+[chrome #0-14]       ✓ I expect that the url is "https://github.com/ctrees/drpfeature"
+[chrome #0-14]       ✓ I expect that the title is "GitHub - ctrees/drpfeature: Digital Rebar Provision UX Feature Testing Automation"
+[chrome #0-14]
+[chrome #0-14]
+[chrome #0-14] 3 passing (7s)
+[chrome #0-14]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------
+[chrome #0-18] Session ID: 3044202b8940ccd186ffc4e303137755
+[chrome #0-18] Spec: /Users/msops/Code/drpfeature/src/features/login.feature
+[chrome #0-18] Running: chrome
+[chrome #0-18]
+[chrome #0-18] RackN UX Portal Login Test
+[chrome #0-18]
+[chrome #0-18]     WTF
+[chrome #0-18]       ✓ I open the url "https://github.com/"
+[chrome #0-18]       ✓ the title is "The world's leading software development platform · GitHub"
+[chrome #0-18]
+[chrome #0-18]     feature-login-unknown-user
+[chrome #0-18]       ✓ I am an anonymous user at the RackN-Portal
+[chrome #0-18]       ✓ I click the RackN-UX button "RackN Portal Login"
+[chrome #0-18]       ✓ I expect the url to contain "amazoncognito.com"
+[chrome #0-18]       ✓ the title is "Signin"
+[chrome #0-18]       ✓ I attempt RackN-Login with username "gobblygook@horseoff.com" and password "BadPass"
+[chrome #0-18]       ✓ I expect that element "p#loginErrorMessage" becomes visible
+[chrome #0-18]       ✓ I expect that element "p#loginErrorMessage" does appear exactly "2" times
+[chrome #0-18]       ✓ I expect that RackN-UX element "//*[@id='loginErrorMessage']" matches the text "User does not exist."
+[chrome #0-18]
+[chrome #0-18]     feature-login-test-user
+[chrome #0-18]       ✓ I am an anonymous user at the RackN-Portal
+[chrome #0-18]       ✓ I click the RackN-UX button "RackN Portal Login"
+[chrome #0-18]       ✓ I expect the url to contain "amazoncognito.com"
+[chrome #0-18]       ✓ the title is "Signin"
+[chrome #0-18]       ✓ I attempt RackN-Login with username "test@horseoff.com" and password "GoodUser1"
+[chrome #0-18]       ✓ I expect that element "//*[@id='header']/div[2]/div/div/div[1]" becomes visible
+[chrome #0-18]       ✓ I expect that element "//*[@id='header']/div[2]/div/div/div[1]" does appear exactly "1" times
+[chrome #0-18]       ✓ I pause for 5000ms
+[chrome #0-18]       ✓ I wait on element "//*[@id='header']/div[2]/div/div/div[1]" for 5000ms to be visible
+[chrome #0-18]       ✓ I expect that element "//*[@id='header']/div[2]/div/div/div[1]" matches the text "test@horseoff.com"
+[chrome #0-18]
+[chrome #0-18]
+[chrome #0-18] 20 passing (33s)
+[chrome #0-18]
+
+
+
+==================================================================
+Number of specs: 31
+
+
+23 passing (60.60s)
+
+info:    No forever processes running
+$ DEBUG=false yarn run wdio wdio.PageObjectTest.conf.js
+$ /Users/msops/Code/drpfeature/node_modules/.bin/wdio wdio.PageObjectTest.conf.js
+------------------------------------------------------------------
+[chrome #0-0] Session ID: b2a3e975568f35da2bd0f32b7e394e97
+[chrome #0-0] Spec: /Users/msops/Code/drpfeature/src/pospecs/login.spec.js
+[chrome #0-0] Running: chrome
+[chrome #0-0]
+[chrome #0-0] drp-ux auth form
+[chrome #0-0]   ✓ bdd-login-unknown-user
+[chrome #0-0]   ✓ bdd-login-test-user
+[chrome #0-0]
+[chrome #0-0]
+[chrome #0-0] 2 passing (17s)
+[chrome #0-0]
+
+✨  Done in 85.01s.
+catmini:drpfeature msops$ date
+Tue Jan  9 15:29:56 CST 2018
+catmini:drpfeature msops$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   docs/source/feature-login-termout.txt
+	modified:   src/pospecs/login.spec.js
+	modified:   wdio.PageObjectTest.conf.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	docs/source/common-login-termout.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+catmini:drpfeature msops$ 

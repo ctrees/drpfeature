@@ -67,3 +67,27 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 catmini:drpfeature msops$ 
+catmini:drpfeature msops$ git add *
+The following paths are ignored by one of your .gitignore files:
+errorShots
+node_modules
+screenshots
+Use -f if you really want to add them.
+catmini:drpfeature msops$ git commit -m "Issue 1 - Feature login - Working"
+[master 540f28d] Issue 1 - Feature login - Working
+ Committer: Mail Services Operations <msops@catmini.cat9.private>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 9 files changed, 134 insertions(+), 36 deletions(-)
+ create mode 100644 docs/source/feature-login-termout.txt
+catmini:drpfeature msops$ 

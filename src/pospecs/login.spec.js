@@ -14,6 +14,11 @@ describe('drp-ux auth form', function () {
     
     it('bdd-login-unknown-user', function () {
         LoginPage.open();
+        LoginPage.racknSupportLogoutinButton.waitForExist(3000);
+        LoginPage.racknSupportLogoutinButton.click();
+        LoginPage.submitButton.waitForExist(3000);
+        LoginPage.username.waitForExist(3000);
+        LoginPage.password.waitForExist(3000);
         LoginPage.username.waitForExist(3000);
         LoginPage.username.waitForVisible(3000);
         browser.keys('Tab');
@@ -29,6 +34,11 @@ describe('drp-ux auth form', function () {
     
     it('bdd-login-test-user', function () {
         LoginPage.open();
+        LoginPage.racknSupportLogoutinButton.waitForExist(3000);
+        LoginPage.racknSupportLogoutinButton.click();
+        LoginPage.submitButton.waitForExist(3000);
+        LoginPage.username.waitForExist(3000);
+        LoginPage.password.waitForExist(3000); 
         browser.keys('Tab');
         LoginPage.username.waitForExist(3000);
         LoginPage.username.waitForVisible(3000);
