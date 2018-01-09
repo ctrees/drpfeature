@@ -55,7 +55,5 @@ module.exports = (username, password) => {
     browser.keys('Tab');
     browser.keys('Tab');
     browser.keys('Enter');
-    //- Visual check is stored in drpfeature/screeshots/screen 
-    navbarPage.visCheck('visCheck: Valid login Check Fail')
 
 };

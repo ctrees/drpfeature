@@ -44,8 +44,22 @@ module.exports = (elementType, element, falseCase, expectedText) => {
         boolFalseCase = true;
     }
 
-    const text = browser[command](element);
+    //const text = browser[command](element);
 
+    //-- BEGIN HACK
+    const arrayOfRestCrap = $$(element);
+ /*
+    console.log(element);
+    console.log(arrayOfRestCrap);
+    console.log(arrayOfRestCrap[1]);
+    console.log(arrayOfRestCrap[1].getText());
+ */   
+    //const text = browser[command](elementINeed);
+    //const text = browser.element('p')[0].getText('//p[contains(.,"exists")]');
+    //const text = browser.getText(arrayOfRestCrap[0]);
+    const text = arrayOfRestCrap[1].getText();
+    //-- END HACK
+    
     if (boolFalseCase) {
         parsedExpectedText.should.not.equal(text);
     } else {

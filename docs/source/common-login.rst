@@ -17,10 +17,21 @@ common-login
   #. visual result file 2: screenshots/screen/login-<testname2>_document_Chrome_v63_1024x768.png
 
 **Related Links**
+
+.. toctree::
+   :maxdepth: 2
+
+   feature-login
+   pageobject-login
+   help-test-tutorial-login
+
+**Related - Read The Docs - Links**
+  #. common-login_ Common resources for login feature
   #. feature-login_ Documentation for login feature
   #. pageobject-login_ Documentation for login pageobject
   #. help-test-tutorial-login_ Tutorial on developing, debuging and using login testing.
 
+.. _common-login: http://drpfeature.readthedocs.io/en/latest/common-login.html
 .. _feature-login: http://drpfeature.readthedocs.io/en/latest/feature-login.html
 .. _pageobject-login: http://drpfeature.readthedocs.io/en/latest/pageobject-login.html
 .. _help-test-tutorial-login: http://drpfeature.readthedocs.io/en/latest/help-test-tutorial-login.html

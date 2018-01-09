@@ -1,20 +1,11 @@
 pageobject-login 
 ================
 
-**Intent**
-  This login pageobject is used to access UX elements in the RackN portal Login process and to preform automated UX login testing.
+Below is common-login.rst which describes the feature and mappings.
 
-**Success**
-  Passing and Failing test that can detect successful and failed RackN UX portal user authentication access.
-
-**Related Information**
-  #. feature help location: docs/source/feature-login.rst
-  #. feature file location: src/features/login.features
-  #. pageobject help location: (this file) docs/source/pageobject-login.rst
-  #. spec test file location: src/spec/login.spec.js
-  #. pageobject file location: src/pageojects/login.page.js
-  #. visual result file 1: screenshots/screen/should-deny-access-with-wrong-creds_document_Chrome_v63_1024x768.png
-  #. visual result file 2: screenshots/screen/should-allow-access-with-correct-creds_document_Chrome_v63_1024x768.png
+.. literalinclude:: common-login.rst
+  :language: rst
+  :linenos:
 
 Below is the provision UX login.page.js
 

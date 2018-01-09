@@ -22,6 +22,20 @@ The above test is run using the following command with the following output.
 
 Currently this test only checks https://github.com/ctrees/drpfeature html title.  GitHub search and 'fake login' Scenarios are commented out.
 
+WIP
+---
+
+#. Basic login test working.
+    This is the basic login test via webdriver to login a user.  I created a test@horseoff.com email address to test with to get through the aws conig? OAuth like stuff.  The major difficulty was just getting the tools up and going AND figureing out React.  Could not find much css styling to hang selectors off of and still having issues.  But for now... I'll call it good enough and start logging issues.
+
+#. Cleanup Documents and create an issue for the Feature Login
+
+TODO
+---- 
+
+#. Get working as well as login.spec.js.
+
+
 .. _common-login: http://drpfeature.readthedocs.io/en/latest/common-login.html
 
 .. 
