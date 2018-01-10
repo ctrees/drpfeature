@@ -54,6 +54,7 @@ Guides
    help
    help-test-tutorial-login
    help-doc-github-issue
+   help-doc-github-release
    help-debug-login
 
 Indices and tables
