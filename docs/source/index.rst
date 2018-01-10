@@ -34,6 +34,8 @@ Guides
    bugsWorkInProgress
    help
    help-test-tutorial-login
+   help-doc-github-issue
+   help-debug-login
 
 Indices and tables
 ==================

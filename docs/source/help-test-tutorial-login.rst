@@ -128,14 +128,14 @@ AND we get screen shots of the test if you missed the flash of the browser worki
 
 **NOTE: THESE IMAGES ONLY SHOW** if you build the docs locally.
 
-#. should-deny-access-with-wrong-creds
+#. bdd-login-test-user_document_Chrome_v63_1024x768
 
-    .. image:: ../../screenshots/screen/should-deny-access-with-wrong-creds_document_Chrome_v63_1024x768.png
+    .. image:: ../../screenshots/screen/bdd-login-test-user_document_Chrome_v63_1024x768.png
        :width: 400
 
-#. should-allow-access-with-correct-creds
+#. bdd-login-unknown-user_document_Chrome_v63_1024x768
 
-    .. image:: ../../screenshots/screen/should-allow-access-with-correct-creds_document_Chrome_v63_1024x768.png
+    .. image:: ../../screenshots/screen/bdd-login-unknown-user_document_Chrome_v63_1024x768.png
        :width: 400
 
 FLAMEON

@@ -131,3 +131,56 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 catmini:drpfeature msops$ 
+
+catmini:drpfeature msops$ git add *
+The following paths are ignored by one of your .gitignore files:
+errorShots
+node_modules
+screenshots
+Use -f if you really want to add them.
+catmini:drpfeature msops$ git commit -m "Issue 1 - Feature Login - Common Test update"
+[master ddebd56] Issue 1 - Feature Login - Common Test update
+ Committer: Mail Services Operations <msops@catmini.cat9.private>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 168 insertions(+), 1 deletion(-)
+ create mode 100644 docs/source/common-login-termout.txt
+catmini:drpfeature msops$ yarn docs
+yarn run v1.3.2
+$ cd docs && make html && cd ..
+Running Sphinx v1.6.5
+loading pickled environment... done
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 1 source files that are out of date
+updating environment: 0 added, 4 changed, 0 removed
+reading sources... [100%] pageobject-login                                                    
+/Users/msops/Code/drpfeature/docs/source/help-test-tutorial-login.rst:: WARNING: image file not readable: ../../screenshots/screen/should-deny-access-with-wrong-creds_document_Chrome_v63_1024x768.png
+/Users/msops/Code/drpfeature/docs/source/help-test-tutorial-login.rst:: WARNING: image file not readable: ../../screenshots/screen/should-allow-access-with-correct-creds_document_Chrome_v63_1024x768.png
+/Users/msops/Code/drpfeature/docs/source/pageobject-login.rst:42: WARNING: image file not readable: ../../screenshots/screen/should-deny-access-with-wrong-creds_document_Chrome_v63_1024x768.png
+/Users/msops/Code/drpfeature/docs/source/pageobject-login.rst:46: WARNING: image file not readable: ../../screenshots/screen/should-allow-access-with-correct-creds_document_Chrome_v63_1024x768.png
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] pageobjects                                                          
+generating indices... genindex
+writing additional pages... search
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded, 4 warnings.
+
+Build finished. The HTML pages are in build/html.
+✨  Done in 2.45s.
+catmini:drpfeature msops$ 
