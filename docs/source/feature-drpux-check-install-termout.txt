@@ -1,0 +1,38 @@
+catmini:drpfeature msops$ yarn run wdio --spec ./src/features/drpux.feature 
+
+or
+
+catmini:drpfeature msops$ yarn run wip
+yarn run v1.3.2
+$ yarn run wdio --spec ./src/features/drpux-iso.feature
+$ /Users/msops/Code/drpfeature/node_modules/.bin/wdio --spec ./src/features/drpux-iso.feature
+------------------------------------------------------------------
+[chrome #0-0] Session ID: 6faf1f316261baa40b29704c9ee0332c
+[chrome #0-0] Spec: /Users/msops/Code/drpfeature/src/features/drpux-iso.feature
+[chrome #0-0] Running: chrome
+[chrome #0-0]
+[chrome #0-0] RackN UX Portal Fresh Install Check Test
+[chrome #0-0]
+[chrome #0-0]     github-repo-network-check
+[chrome #0-0]       ✓ I open the url "https://github.com/ctrees/drpfeature"
+[chrome #0-0]       ✓ I expect that the url is "https://github.com/ctrees/drpfeature"
+[chrome #0-0]       ✓ I expect that the title is "GitHub - ctrees/drpfeature: Digital Rebar Provision UX Feature Testing Automation"
+[chrome #0-0]
+[chrome #0-0]     feature-login-unknown-user
+[chrome #0-0]       ✓ I am running the drp-provision endpoint with url "https://192.168.1.200:8092"
+[chrome #0-0]       ✓ I open the url "https://rackn.github.io/provision-ux/#/e/192.168.1.200:8092/isos"
+[chrome #0-0]       ✓ the title is "RackN"
+[chrome #0-0]       ✓ I set "rocketskates" to REACTjs inputfield "input[name=username]"
+[chrome #0-0]       ✓ I set "r0cketsk8ts" to REACTjs inputfield "input[name=password]"
+[chrome #0-0]       ✓ I click the RackN-UX button "button[type=submit]"
+[chrome #0-0]       ✓ I expect that element "#root > div > div:nth-child(3) > div > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div > table > tbody > tr:nth-child(1) > td:nth-child(2)" becomes visible
+[chrome #0-0]       ✓ I expect that RackN-UX REACTjs index "0" of element "td:nth-child(2)" matches the text "CentOS-7-x86_64-Minimal-1708.iso"
+[chrome #0-0]       ✓ I expect that RackN-UX REACTjs index "1" of element "td:nth-child(2)" matches the text "sledgehammer-f5ffd3ed10ba403ffff40c3621f1e31ada0c7e15.tar"
+[chrome #0-0]       ✓ I expect that RackN-UX REACTjs index "2" of element "td:nth-child(2)" matches the text "ubuntu-16.04.3-server-amd64.iso"
+[chrome #0-0]
+[chrome #0-0]
+[chrome #0-0] 13 passing (7s)
+[chrome #0-0]
+
+✨  Done in 11.63s.
+catmini:drpfeature msops$ 

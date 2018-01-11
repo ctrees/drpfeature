@@ -1,0 +1,32 @@
+catmini:drpfeature msops$ touch docs/source/feature-drpux-check-install-gitcommit.txt
+catmini:drpfeature msops$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .gitignore
+	modified:   docs/source/features.rst
+	modified:   docs/source/index.rst
+	modified:   package.json
+	modified:   src/features/login.feature
+	modified:   src/steps/given.js
+	modified:   src/steps/then.js
+	modified:   src/steps/when.js
+	modified:   src/support/action/racknClickElement.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	docs/source/feature-drpux-check-install-gitcommit.txt
+	docs/source/feature-drpux-check-install-termout.txt
+	docs/source/feature-drpux-check-install.rst
+	docs/source/help-test-drpisolated.rst
+	src/features/drpux-iso.feature
+	src/support/action/racknSetReactInputField.js
+	src/support/check/racknReactCheckEqualsText.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+catmini:drpfeature msops$ git add *

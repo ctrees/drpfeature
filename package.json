@@ -6,13 +6,14 @@
   "scripts": {
     "clear": "rm -R screenshots errorShots",
     "docs": "cd docs && make html && cd ..",
-    "test": "yarn run test:features; yarn run test:po",
+    "test": "yarn run test:features; yarn run test:po; yarn run docs;",
     "test:po": "DEBUG=false yarn run wdio wdio.PageObjectTest.conf.js",
     "debug:po": "DEBUG=true yarn run wdio wdio.PageObjectTest.conf.js",
     "test:fcheck": "yarn run wdio --spec ./src/features/githubSearch.feature",
     "test:features": "wdio wdio.conf.js; wdio_ret=$?; forever stopall; exit $wdio_ret",
     "test:unit": "jest --config=jest.json",
-    "test:validate": "eslint 'src/**/*.js' 'test/**/*.js!(setup.js)'"
+    "test:validate": "eslint 'src/**/*.js' 'test/**/*.js!(setup.js)'",
+    "wip": "yarn run wdio --spec ./src/features/drpux-iso.feature"
   },
   "repository": {
     "type": "git",

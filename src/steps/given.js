@@ -30,6 +30,10 @@ defineSupportCode(({ Given }) => {
         /^I am an anonymous user at the RackN-Portal$/,
         loginPage.open
     );
+    Given(
+        /^I am running the drp-provision endpoint with (url|site) "([^"]*)?"$/,
+        openWebsite
+    );
     //- RackN DSL mappings - END
     Given(
         /^I open the (url|site) "([^"]*)?"$/,

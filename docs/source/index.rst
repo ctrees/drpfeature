@@ -53,6 +53,7 @@ Guides
    bugsWorkInProgress
    help
    help-test-tutorial-login
+   help-test-drpisolated
    help-doc-github-issue
    help-doc-github-release
    help-debug-login

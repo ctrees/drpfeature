@@ -20,7 +20,16 @@ module.exports = (action, type, element) => {
      */
     const method = (action === 'click') ? 'click' : 'doubleClick';
 
+    //-- BEGIN HACK
+    //const arrayOfRestCrap = $$(element);
+    //const fixedElement = arrayOfRestCrap[0];
+    //-- END HACK
+    
+    //-was- checkIfElementExists(elem);
+    //checkIfElementExists(fixedElement);
     checkIfElementExists(elem);
 
+    //-was- browser[method](elem);
+    //arrayOfRestCrap[0].click();
     browser[method](elem);
 };

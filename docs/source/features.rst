@@ -17,4 +17,5 @@ Below are the feature tests.
 
    feature-login
    feature-githubSearch
+   feature-drpux-check-install
 

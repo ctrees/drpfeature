@@ -31,6 +31,7 @@ import waitForVisible from '../support/action/waitForVisible';
 import checkIfElementExists from '../support/lib/checkIfElementExists';
 //- RackN DSL mappings - BEGIN
 import racknCheckEqualsText from '../support/check/racknCheckEqualsText';
+import racknReactCheckEqualsText from '../support/check/racknReactCheckEqualsText';
 //- RackN DSL mappings - END
 
 
@@ -39,6 +40,10 @@ defineSupportCode(({ Then }) => {
     Then(
         /^I expect that RackN-UX (button|element) "([^"]*)?"( not)* matches the text "([^"]*)?"$/,
         racknCheckEqualsText
+    );
+    Then(
+        /^I expect that RackN-UX REACTjs index "([^"]*)?" of (button|element) "([^"]*)?"( not)* matches the text "([^"]*)?"$/,
+        racknReactCheckEqualsText
     );
     //- RackN DSL mappings - END
     Then(

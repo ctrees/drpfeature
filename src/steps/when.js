@@ -20,6 +20,7 @@ import submitForm from '../support/action/submitForm';
 //- RackN DSL mappings - BEGIN
 import racknClickElement from '../support/action/racknClickElement';
 import racknUserLogin from '../support/action/racknUserLogin';
+import racknSetReactInputField from '../support/action/racknSetReactInputField';
 //import loginPage from '../pageobjects/login.page';
 //- RackN DSL mappings - END
 
@@ -33,6 +34,10 @@ defineSupportCode(({ When }) => {
     When(
         /^I attempt RackN-Login with username "([^"]*)?" and password "([^"]*)?"$/,
         racknUserLogin
+    );
+    When(
+        /^I (add|set) "([^"]*)?" to REACTjs inputfield "([^"]*)?"$/,
+        racknSetReactInputField
     );
     //- RackN DSL mappings - END
     When(

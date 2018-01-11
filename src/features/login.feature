@@ -3,12 +3,12 @@ Feature: RackN UX Portal Login Test
     I want to test the RackN-Portal login
     So I have confidence in the accessablity and security of the RackN-Portal
 
-    Scenario: WTF
+    Scenario: github-network-check
         Given I open the url "https://github.com/"
         Then  the title is "The world's leading software development platform · GitHub"
 
 
-    Scenario: feature-login-unknown-user
+    Scenario: feature-drp-ux-check-install
         Given I am an anonymous user at the RackN-Portal
         When  I click the RackN-UX button "RackN Portal Login"
         Then  I expect the url to contain "amazoncognito.com"
