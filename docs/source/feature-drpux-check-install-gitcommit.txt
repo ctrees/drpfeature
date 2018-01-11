@@ -30,3 +30,56 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 catmini:drpfeature msops$ git add *
+The following paths are ignored by one of your .gitignore files:
+drpisolated
+errorShots
+node_modules
+screenshots
+Use -f if you really want to add them.
+catmini:drpfeature msops$ git commit -m "Issue#5 - feature-drpux-check-install"
+[master 5cd0aca] Issue#5 - feature-drpux-check-install
+ Committer: Mail Services Operations <msops@catmini.cat9.private>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 15 files changed, 536 insertions(+), 4 deletions(-)
+ create mode 100644 docs/source/feature-drpux-check-install-gitcommit.txt
+ create mode 100644 docs/source/feature-drpux-check-install-termout.txt
+ create mode 100644 docs/source/feature-drpux-check-install.rst
+ create mode 100644 docs/source/help-test-drpisolated.rst
+ create mode 100644 src/features/drpux-iso.feature
+ create mode 100644 src/support/action/racknSetReactInputField.js
+ create mode 100644 src/support/check/racknReactCheckEqualsText.js
+catmini:drpfeature msops$
+catmini:drpfeature msops$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .gitignore
+	modified:   docs/source/feature-drpux-check-install-gitcommit.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+catmini:drpfeature msops$ git push
+Counting objects: 25, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 8.93 KiB | 2.23 MiB/s, done.
+Total 25 (delta 14), reused 0 (delta 0)
+remote: Resolving deltas: 100% (14/14), completed with 14 local objects.
+To https://github.com/ctrees/drpfeature.git
+   2e8b690..5cd0aca  master -> master
+catmini:drpfeature msops$ 
