@@ -3,6 +3,7 @@ Feature: RackN UX Portal Fresh Install Check Test
     I want to test to check a drp fresh install through RackN-Portal UX
     So I have confidence in the installation and can learn the RackN-Portal UX layout
 
+
     Scenario: github-repo-network-check
         Given I open the url "https://github.com/ctrees/drpfeature"
         Then  I expect that the url is "https://github.com/ctrees/drpfeature"
@@ -17,6 +18,7 @@ Feature: RackN UX Portal Fresh Install Check Test
 #        And   I pause for 3000ms
         When  I set "rocketskates" to REACTjs inputfield "input[name=username]"
         And   I set "r0cketsk8ts" to REACTjs inputfield "input[name=password]"
+        And   I pause for 60000ms
 #        When  I set "rocketskates" to REACTjs inputfield "//input[@name='username']"
 #        And   I set "r0cketsk8ts" to REACTjs inputfield "//input[@name='password']"
 #        When  I attempt RackN-Login with username "rocketskates" and password "r0cketsk8ts"
