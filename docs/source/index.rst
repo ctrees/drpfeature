@@ -51,7 +51,9 @@ Guides
    features
    pageobjects
    bugsWorkInProgress
+   drpfeature-test
    help
+   help-krib-tutorial
    help-test-tutorial-login
    help-test-drpisolated
    help-doc-github-issue
