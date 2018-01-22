@@ -24,10 +24,10 @@ Manual Steps
     #. Click on the D (disable) button in the first column to disable this dhcp server
 #. RouterBoard 750GL configuration details
     #. Port 1 - IP 192.168.88.1 (default WAN side of default 192.168.88.0/24 subnet)
-    #. Port 2 - Do Not Use: Default manangement MAC
-    #. Port 3 - LAN side network hub port
-    #. Port 4 - LAN side network hub port
-    #. Port 5 - LAN side network hub port
+    #. Port 2 - Do Not Use: Default manangement MAC (not connected)
+    #. Port 3 - LAN side network hub port (catmini network connection)
+    #. Port 4 - LAN side network hub port (not connected)
+    #. Port 5 - LAN side network hub port (not connected)
 
 .. _mikrotik-reset: http://www.mikrotik.com.my/reset-to-factory-default-settings/
 .. _mikrotik-dhcp: https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Server

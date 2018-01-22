@@ -54,11 +54,14 @@ Guides
    drpfeature-test
    help
    help-krib-tutorial
+   help-kubespray-tutorial
    help-test-tutorial-login
    help-test-drpisolated
    help-doc-github-issue
    help-doc-github-release
    help-debug-login
+   help-ssh-setkey
+   help-drpcli-reservations
 
 Indices and tables
 ==================

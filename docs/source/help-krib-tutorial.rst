@@ -13,7 +13,13 @@ Manual Steps
 #. Install drp-provision via drp-quickstart_ in the drpfeature-test-macosx_ configuration
 #. Configure drpfeature-test-vbox_ (virtual box)
 #. Start drp-provision (see note below)
-#. Browse to RackN-Portal_ at https://192.168.88.9:8092 and login with your RackN user (rocketskates r0cketsk8ts is default but you cannot get to krib)
+#. Browse to RackN-Portal_ at https://192.168.88.9:8092 
+    #. Login with your RackN user (rocketskates r0cketsk8ts is default but you cannot get to krib)
+    #. Add the local endpoint 192.168.88.9:8092 to your Endpoints
+        #. Top Left (hamburger icon)
+        #. Under "ADD ENDPOINT" type in "192.168.88.9:8092" click Add
+    #. Navigate to ENDPOINT by clicking on "192.168.88.9:8092"
+    #. Click in gray view area to get rid of RackN-Portal overlay ?? UX ??
 #. Browse to RackN-Portal_ endpoint at https://192.168.88.9:8092
     #. Browse to Subnets_ 
         #. Add the subnet "en0 192.168.88.9/24" (guessed by dr
@@ -90,6 +96,11 @@ Manual Steps
 
          kubectl --kubeconfig=admin.conf proxy 
 
+.. note:: Double Secrete Probation for kickseed
+     ::
+
+        http://192.168.88.9:8091/machines/db1dcb0f-d0b6-4afb-9da9-e62b62a68e24/compute.ks
+
 Video Track
 
 #. General Show UI Views
@@ -164,26 +175,13 @@ Video Track
 .. _tc1626: https://youtu.be/Psm9aOWzfWk?t=1626
 
 
+.. document includes
+
+.. include:: include-rackn-ux-menu.rst
+.. include:: include-drpfeature-test-setup.rst
 
 .. _Create-Profile: http://provision.readthedocs.io/en/latest/doc/integrations/krib.html#configure-with-the-ux
-.. _`Plugin Providers`: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/providers
-.. _`Content Packages`: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/content
-.. _`Info & Preferences`: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/system
-.. _Jobs: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/jobs
-.. _Stages: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/stages
-.. _Workflow: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/workflow
-.. _`Bulk Actions`: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/bulk
-.. _Profiles: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/profiles
-.. _Machines: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/machines
-.. _`Boot ISOs`: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/isos
-.. _Leases: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/leases
-.. _Subnets: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/subnets
-.. _Users: https://rackn.github.io/provision-ux/#/e/192.168.88.9:8092/users
-.. _RackN-Portal: https://192.168.88.9:8092
-.. _drpfeature-test-network: http://drpfeature.readthedocs.io/en/latest/drpfeature-test-network.html
-.. _drpfeature-test-macosx: http://drpfeature.readthedocs.io/en/latest/drpfeature-test-macosx.html
-.. _drpfeature-test-vbox: http://drpfeature.readthedocs.io/en/latest/drpfeature-test-vbox.html
-.. _drpfeature-test: http://drpfeature.readthedocs.io/en/latest/drpfeature-test.html
+
 .. _drp-quickstart: http://provision.readthedocs.io/en/tip/doc/quickstart.html
 .. _drp-krib-video: https://www.youtube.com/watch?v=Psm9aOWzfWk&feature=youtu.be
 .. _drp-krib-document: http://provision.readthedocs.io/en/latest/doc/integrations/krib.html
