@@ -1,6 +1,7 @@
 # Chris Trees merging gitinores
 
 .DS_Store
+drpisolated*
 
 ################################
 # cucumber-boilerplate gitignore 
