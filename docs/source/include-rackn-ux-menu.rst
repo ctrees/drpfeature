@@ -1,5 +1,7 @@
 
-.. _RackN-Portal: https://192.168.88.9:8092
+.. _hpeC7000-Portal: https://192.168.88.9
+
+.. _RackN-Portal: https://192.168.88.3:8092
 
 .. _Overview: https://rackn.github.io/provision-ux/#/e/192.168.88.3:8092/overview
 .. _Machines: https://rackn.github.io/provision-ux/#/e/192.168.88.3:8092/machines

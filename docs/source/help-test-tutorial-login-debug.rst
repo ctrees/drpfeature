@@ -1,6 +1,7 @@
 
-help-debug-login
-================
+==============================
+help-test-tutorial-login-debug
+==============================
 
 This is video was done after I foo-bar a working test and got lost.  In my effort to get back to what I had working, I figured out a cleaner way to explain how the feature DSL could talk to the CSS/spec DSL.
 

@@ -4,7 +4,6 @@ help-test-tutorial-login
 This is intended as video tutorial testing workflow walkthrough.
 
 Agenda
-------
 
 #. TLTR - Setup, Clone and Run.
 
@@ -17,7 +16,6 @@ Agenda
 #. BDFL - Benevolent Dictator For Life or Force other to bend to your will through code, use, documentation and basically being the smartest person in the room (even if your Taed).
 
 TLTR
-----
 
 Setup, Clone and Run it already.... ::
 
@@ -28,7 +26,6 @@ Setup, Clone and Run it already.... ::
     catmini:drpfeature msops$ yarn run docs
 
 WTF
----
 
 OK... what just happened explained.  
 
@@ -139,7 +136,6 @@ AND we get screen shots of the test if you missed the flash of the browser worki
        :width: 400
 
 FLAMEON
--------
 
 OK... now let's **add value** as I like to say, or just Bchn... but it's improving thing in my reality.
 
@@ -155,21 +151,18 @@ OK... now let's **add value** as I like to say, or just Bchn... but it's improvi
 #. What next... HACK see below.
 
 HACK
-----
 
 The fun part till you get frustrated with humans and pretty little tools too.
 
 See Part 8.
 
 BDFL
-----
 
 Becoming the Benevolent Dictator For Life seems fun, but takes lots of human and artificial minions _BUT_ it makes life easier when well trained.
 
 See Part 9
 
-login tutorial Video
---------------------
+login tutorial Vide0
 
 + Part 1 - TLTR
 

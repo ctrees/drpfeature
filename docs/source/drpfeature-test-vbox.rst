@@ -7,6 +7,8 @@ Intent
 Success
   vbox setup for PXE boot nodes on an isolated network so broadcast messages are easy to monitor.
 
+STATUS: **FAIL** to boot a VM in Virtual VBOX
+
 Manual Steps - VirtualBox_ Install
 
 #. Setup network configuration using drpfeature-test-network_

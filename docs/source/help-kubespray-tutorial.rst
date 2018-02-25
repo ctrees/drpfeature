@@ -136,4 +136,8 @@ Video
 .. _kubespray-github: https://github.com/kubernetes-incubator/kubespray
 
 
-
+.. Key in global profile
+    access-keys: {
+    "drpops": "ssh-rsa AAA...U9n31 drpops@drpe.drpfeature.test"
+    }
+    access-ssh-root-mode: "without-password"

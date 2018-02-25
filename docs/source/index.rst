@@ -53,15 +53,15 @@ Guides
    bugsWorkInProgress
    drpfeature-test
    help
-   help-krib-tutorial
-   help-kubespray-tutorial
    help-test-tutorial-login
+   help-test-tutorial-login-debug
    help-test-drpisolated
    help-doc-github-issue
    help-doc-github-release
-   help-debug-login
    help-ssh-setkey
    help-drpcli-reservations
+   help-krib-tutorial
+   help-kubespray-tutorial
 
 Indices and tables
 ==================

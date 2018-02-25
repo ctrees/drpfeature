@@ -24,7 +24,7 @@ common-login
    feature-login
    pageobject-login
    help-test-tutorial-login
-   help-debug-login
+   help-test-tutorial-login-debug
 
 The above test is run using the following command with the following output.
 

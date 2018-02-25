@@ -1,0 +1,37 @@
+shane [7:23 PM]
+you surely can!  You'll need to do some work to create a BootEnv to do this - we don't have a stock one
+[7:23 PM]
+details on how to make PXE boot w/ RancherOS is available at:
+http://rancher.com/docs/os/v1.1/en/running-rancheros/server/pxe/
+rancher.com
+Booting RancherOS with iPXE
+Documentation for Rancher
+
+
+shane [9:15 PM]
+ok @Dingo - if you are willing to experiment and hack around a bit - here is a basic RancherOS set of bootenv/stages that works.  
+WARNING WARNING:  THIS WILL NOT WORK ON YOUR METAL 
+this was tested by "borrowing" the Packet.net provisioning script - to provision this (successfully) in Packet.net environment
+you WILL HAVE TO MODIFY the `bootenvs/rancheros.yml` kernel options to get a different config file you define
+you WILL HAVE TO MODIFY the `rancher-packet-provisioning-script.sh` to work for your metal and environment
+WARNING:  I've never used Rancher before - but I was able to boot this against DRP endpoint in packet.net without any problems
+
+shane [9:16 PM]
+uploaded this file:  
+rancheros example
+GZipClick to download
+
+
+Add Comment
+
+shane [9:17 PM]
+_IF_ you had a packet.net account you could test this and it'd work with the following commands/notes:
+* for packet.net need `console=ttyS1,115200n8` parameter applied to machine
+* untar the above TGZ
+* create bootenv: `drpcli bootenvs create -< bootenvs/rancheros.yml`
+* create stage: `drpcli stages crate -< stages/rancheros.yml`
+* add ISO image:  `drpcli bootenvs uploadiso rancheros-latest-install` (edited)
+[9:22 PM]
+sort out the customizations in the provisioning steps you need for your bare metal
+then set a machine to the `rancheros-latest-install` stage 
+and off you go

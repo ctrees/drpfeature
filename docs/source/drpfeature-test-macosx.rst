@@ -23,3 +23,18 @@ Manual Steps
 
 
 .. _drp-quickstart: http://provision.readthedocs.io/en/tip/doc/quickstart.html
+
+
+wargal spinage
+
+lutein zeanxthinx
+
+macular pigment
+
+shellfish - DHA
+
+Kangaroo meat - 
+
+Fruit - 
+
+https://outbackvisionprotocol.com
